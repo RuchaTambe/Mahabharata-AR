@@ -39,7 +39,7 @@ public class Shooting : MonoBehaviour
     }
     public void end_of_game() {
         status = 2;
-        int score = core.instance.get_score();
+        int score = projectal.instance.getNumberOfCollisions();//core.instance.get_score();
         show_result.text = "score is "+score + "\n out of "+times+"\n game over";
         end_canvas.SetActive(true);
 
@@ -86,7 +86,7 @@ public class Shooting : MonoBehaviour
         //}
         
             // Otherwise change the field of view based on the change in distance between the touches.
-            cam.fieldOfView = 0.1f;
+           // cam.fieldOfView = 0.1f;
 
             // Clamp the field of view to make sure it's between 0 and 180.
             //cam.fieldOfView = Mathf.Clamp(cam.fieldOfView, 0.1f, 179.9f);

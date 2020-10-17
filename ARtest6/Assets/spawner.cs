@@ -31,9 +31,10 @@ public class spawner : MonoBehaviour
     {
         shootbutton.SetActive(true);
         Vector3 v3 = cam.transform.position + cam.transform.forward * 3f;
-        v3[0] += Random.Range(-1f,1f);
-        v3[1] += Random.Range(-1f, 1f);
-        v3[2] += Random.Range(-1f, 1f);
+     //   Vector3 v3=cam.transform.position+ new Vector3(cam.transform.position.x,5f,cam.transform.position.z+3f);
+         v3[0] += Random.Range(-1f,1f);
+         v3[1] += Random.Range(-1f, 0f);
+         v3[2] += Random.Range(-1f, 1f);
         Instantiate(tospawn, v3, cam.transform.rotation);
         placebutton.SetActive(false);
         Shooting.instance.setStatus(1);

@@ -14,9 +14,19 @@ public class bow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 v3= cam.transform.position;
+         Vector3 v3 = cam.transform.position;
+        // transform.position = v3+ cam.transform.forward * 0.6f;
+        // transform.rotation = cam.transform.rotation;
+
+        if(Input.GetMouseButtonDown(0)){
+            Debug.Log("Screen touched ");
+            transform.position = v3+ cam.transform.forward * 0.3f;
+            transform.rotation = cam.transform.rotation;
+        }
+        if(Input.GetMouseButtonUp(0)){
         transform.position = v3+ cam.transform.forward * 0.6f;
-        transform.rotation = cam.transform.rotation;
+       transform.rotation = cam.transform.rotation;
+        }
 
     }
 }
