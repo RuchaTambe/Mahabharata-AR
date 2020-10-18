@@ -1,4 +1,0 @@
-#Sat Oct 17 16:33:42 PDT 2020
-base.0=/Users/ruchatambe/Documents/MS/USC/Courses/CSCI 538/Mahabharata-AR/ARtest6/Temp/gradleOut/launcher/build/intermediates/transforms/dexMerger/release/0
-path.0=classes.dex
-renamed.0=classes.dex
