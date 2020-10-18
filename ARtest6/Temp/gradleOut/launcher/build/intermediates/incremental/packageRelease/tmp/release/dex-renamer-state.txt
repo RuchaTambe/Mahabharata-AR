@@ -1,0 +1,4 @@
+#Sat Oct 17 22:19:52 PDT 2020
+base.0=/Users/zhaozhang/Documents/Mahabharata-AR/ARtest6/Temp/gradleOut/launcher/build/intermediates/transforms/dexMerger/release/0
+path.0=classes.dex
+renamed.0=classes.dex
